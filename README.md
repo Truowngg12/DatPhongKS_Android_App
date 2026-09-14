@@ -25,5 +25,34 @@ DATPHONGKS/
 │   │   │   │   └── database/     # Cấu hình và thao tác với SQLite Helper
 │   │   │   ├── res/              # Layout XML, màu sắc, font chữ và hình ảnh
 │   │   │   └── AndroidManifest.xml # File cấu hình và cấp quyền của ứng dụng
+
+🚀 Hướng dẫn cài đặt và Khởi chạy
+Yêu cầu hệ thống
+Android Studio: Phiên bản Flamingo (2022.2.1) hoặc mới hơn.
+
+JDK: Java 11 hoặc Java 17.
+
+Thiết bị: Máy ảo (Emulator) hoặc điện thoại Android thật chạy API 24 (Android 7.0) trở lên.
+
+1. Tải mã nguồn (Clone Project)
+Mở Terminal hoặc Git Bash và chạy lệnh sau để tải dự án về máy:
+git clone [[https://github.com/Truowngg12/ten-repo-cua-ban.git](https://github.com/Truowngg12/DatPhongKS_Android_App.git)]
+
+2. Mở dự án và Đồng bộ (Sync)
+Mở Android Studio.
+
+Chọn File > Open và trỏ tới thư mục DATPHONGKS vừa tải về.
+
+Đợi Android Studio tải các thư viện cần thiết. Nếu có thông báo Gradle Sync, hãy bấm Sync Now.
+
+3. Cấu hình Cơ sở dữ liệu (SQLite)
+Dự án sử dụng cơ sở dữ liệu cục bộ SQLite. Bạn không cần cài đặt thêm server hay cấu hình file SQL bên ngoài.
+
+Ngay trong lần đầu tiên ứng dụng được chạy (chạy hàm onCreate của SQLiteOpenHelper), toàn bộ các bảng dữ liệu (Users, Rooms, Bookings) sẽ tự động được khởi tạo trong bộ nhớ của thiết bị.
+
+4. Chạy ứng dụng
+Kết nối điện thoại Android của bạn (đã bật chế độ USB Debugging) hoặc mở một máy ảo (AVD).
+
+Bấm nút Run (▶) màu xanh lá cây trên thanh công cụ của Android Studio hoặc sử dụng phím tắt Shift + F10.
 │   └── build.gradle              # Cấu hình thư viện (Glide, Material 3) cho module
 └── build.gradle                  # Cấu hình build cho toàn bộ dự án
