@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DATPHONGKS">
+
+        <!-- Đã bật lại màn hình Splash làm Launcher (Cửa chính) -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DATPHONGKS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.auth.AuthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.hotel.HotelDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.booking.BookingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.booking.PaymentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.booking.ConfirmationActivity"
+            android:exported="false" />
+
+        <!-- ===== Module Đặt phòng đơn giản (SQLite) ===== -->
+
+        <activity
+            android:name=".simplebooking.RoomListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".simplebooking.SimpleBookingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".simplebooking.AdminActivity"
+            android:exported="false" />
+
+        <!-- MỚI (Phần 1): Màn hình Admin Dashboard - điểm đến khi đăng nhập với role == 1 -->
+        <activity
+            android:name=".ui.admin.AdminDashboardActivity"
+            android:exported="false" />
+
+        <!-- Màn hình Thêm phòng mới dành cho Admin -->
+        <activity
+            android:name=".ui.admin.AddRoomActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

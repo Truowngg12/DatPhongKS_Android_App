@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imgRoom" type="id" />
+    <item name="txtRoomName" type="id" />
+    <item name="txtRoomPrice" type="id" />
+    <item name="lvDanhSachPhong" type="id" />
+    <item name="edtTenKhach" type="id" />
+    <item name="edtSoDienThoai" type="id" />
+    <item name="edtSoNgay" type="id" />
+    <item name="btnXacNhan" type="id" />
+    <item name="btnHotDeals" type="id" />
+    <item name="btnTopRated" type="id" />
+    <item name="layoutGuests" type="id" />
+    <item name="tvGuests" type="id" />
+</resources>

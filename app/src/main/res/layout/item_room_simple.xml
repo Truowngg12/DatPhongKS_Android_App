@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp">
+
+    <!-- ID ảnh phòng -->
+    <ImageView
+        android:id="@+id/imgRoom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical">
+
+        <!-- ID tên phòng -->
+        <TextView
+            android:id="@+id/txtRoomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên phòng"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B" />
+
+        <!-- ID giá phòng -->
+        <TextView
+            android:id="@+id/txtRoomPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá tiền"
+            android:textSize="15sp"
+            android:textColor="@color/gold_accent"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <!-- ID Trạng thái phòng (Trống / Đã đặt) -->
+        <TextView
+            android:id="@+id/txtRoomStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trống"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:layout_marginTop="6dp"
+            android:background="#166534" />
+
+    </LinearLayout>
+
+</LinearLayout>
